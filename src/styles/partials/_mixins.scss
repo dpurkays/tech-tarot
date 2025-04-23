@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin h1-style {
+    font-family: "Audiowide", sans-serif;
+    font-weight: $regular;
+    font-size: 32px;
+    line-height: 40px;
+    color:$heading-color;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 64px;
+    }
+}
