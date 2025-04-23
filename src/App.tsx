@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Header />
-      <h1>Hello Tech Tarot</h1>
       <HomePage />
       <Footer />
     </>

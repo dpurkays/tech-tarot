@@ -24,3 +24,35 @@
         line-height: 64px;
     }
 }
+
+@mixin h2-style {
+    font-family: "Audiowide", sans-serif;
+    font-weight: $regular;
+    font-size: 24px;
+    line-height: 32px;
+    color: $heading-color;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@mixin page-layout {
+    padding: $spacing-mobile;
+
+    @include tablet {
+        padding: $spacing-tablet;
+    }
+
+    @include desktop {
+        padding: 1.5rem $spacing-desktop;
+    }
+}
+
+@mixin section-layout {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-mobile;
+    @include page-layout;
+}

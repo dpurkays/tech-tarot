@@ -68,7 +68,7 @@ Card data is stored in:
 ## Roadmap
 
 - [x] Setup Vite + React + TypeScript project
-- [ ] Configure global Sass and basic folder structure
+- [x] Configure global Sass and basic folder structure
 - [ ] Add user question input field
 - [ ] Build "Draw 3 Cards" functionality
 - [ ] Reveal the cards labeled past, present and future

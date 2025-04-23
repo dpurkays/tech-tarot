@@ -2,7 +2,7 @@ import "./Header.scss";
 function Header() {
     return ( 
         <header className="site-header">
-            <h1 className="title">Tech Tarot 🔮</h1>
+            <h2 className="site-header__title">Tech Tarot 🔮</h2>
         </header> 
     );
 }

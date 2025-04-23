@@ -1,7 +1,8 @@
+import "./HomePage.scss";
 function HomePage() {
     return ( 
-        <main>
-            <h2>Hello homepage</h2>
+        <main className="home">
+            <h1 className="home__title">Hello homepage</h1>
         </main> 
     );
 }

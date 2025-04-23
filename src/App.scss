@@ -23,7 +23,9 @@ body {
   line-height: 1.625rem;
   font-weight: $regular;
   color: $primary-text-color;
-  background-color: $background-color;
+  background: $background-color;
+  overflow: hidden;
+  position: relative;
 
   @include tablet {
     font-size: 1.125rem;

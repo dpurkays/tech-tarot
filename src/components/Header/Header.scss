@@ -4,7 +4,8 @@
 
 .site-header {
     padding: 1rem;
-    .title {
-        @include h1-style;
+    
+    &__title {
+        @include h2-style;
     }
 }
