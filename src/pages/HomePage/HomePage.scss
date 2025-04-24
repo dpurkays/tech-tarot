@@ -9,4 +9,19 @@
     @include page-layout;
 }
 
+.reading-question {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-mobile;
+    @include page-layout;
+
+    &__title {
+        text-align: center;
+        @include h2-style;
+    }
+
+    &__text {
+
+    }
+}
 

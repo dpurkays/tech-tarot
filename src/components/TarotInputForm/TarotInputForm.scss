@@ -40,6 +40,8 @@
     }
 
     &__button {
+        color: $primary-text-color;
+        border: none;
         background: linear-gradient(to right, $cta, $cta-secondary);
         box-shadow: 0 0 0.75rem rgba(209, 107, 165, 0.4);
         font-weight: $semibold;
