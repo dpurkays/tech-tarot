@@ -1,0 +1,56 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-background-color;
+    border-radius: 1rem;
+    gap: $spacing-mobile;
+    width: 100%;
+    @include section-layout;
+
+    @include tablet {
+        gap: $spacing-tablet;
+    }
+
+    @include desktop {
+        width: 60%;
+    }
+
+    &__field {
+        width: 100%;
+        min-height: 4.375rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: 0.125rem solid $highlight-color;
+        background-color: $background-color;
+        color: $primary-text-color;
+
+        &::placeholder {
+            color: rgba($primary-text-color, 0.6);
+        }
+
+        &:focus {
+            border-color: $glow;
+            box-shadow: 0 0 0.75rem rgba($glow, 0.8);
+        }
+    }
+
+    &__button {
+        background: linear-gradient(to right, $cta, $cta-secondary);
+        box-shadow: 0 0 0.75rem rgba(209, 107, 165, 0.4);
+        font-weight: $semibold;
+        text-align: center;
+        transition: all $animation-duration ease;
+
+        &:hover {
+            transform: translateY(-0.125rem);
+            box-shadow: 0 0 1rem rgba(209, 107, 165, 0.6), 0 0 1.5rem rgba(255, 203, 107, 0.5);
+        }
+
+        @include button-style;
+    }
+}

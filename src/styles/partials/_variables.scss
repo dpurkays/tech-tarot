@@ -2,12 +2,15 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
 
 $background-color: #0B0C10;
+$secondary-background-color: #2C2F48;
 
 $primary-text-color: #EAEAEA;
 $heading-color: #915EFF;
+$alt-text-color: #FFCB6B;
+$highlight-color: #915EFF;
 
 $cta: #915EFF;
-$cta-hover: #D16BA5;
+$cta-secondary: #D16BA5;
 
 $glow: #FFCB6B;
 $soft: #d5b3ff;
@@ -23,3 +26,5 @@ $semibold: 600;
 $spacing-mobile: 1rem;
 $spacing-tablet: 1.5rem;
 $spacing-desktop: 3rem;
+
+$animation-duration: 0.3s;

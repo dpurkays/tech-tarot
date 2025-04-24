@@ -15,27 +15,38 @@
 @mixin h1-style {
     font-family: "Audiowide", sans-serif;
     font-weight: $regular;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     color:$heading-color;
 
     @include tablet {
-        font-size: 56px;
-        line-height: 64px;
+        font-size: 3.5rem;
+        line-height: 4rem;
     }
 }
 
 @mixin h2-style {
     font-family: "Audiowide", sans-serif;
     font-weight: $regular;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: $heading-color;
 
     @include tablet {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
+}
+
+@mixin small-body-style {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+
+    @include tablet {
+        font-size: 0.875rem;
+        line-height: 1rem;
+    }
+
 }
 
 @mixin page-layout {
@@ -55,4 +66,10 @@
     flex-direction: column;
     gap: $spacing-mobile;
     @include page-layout;
+}
+
+@mixin button-style {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
 }
