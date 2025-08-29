@@ -25,7 +25,7 @@ function TarotInputForm({ setUserQuestion }: TarotInputProps) {
       </h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 lg:gap-8">
         <textarea
-          className="h-32 w-60 lg:w-80 p-2 rounded-2xl"
+          className="h-32 w-60 lg:w-80 p-2 rounded-2xl focus:outline-none focus:ring-2 focus:ring-fuchsia-400/60 focus:shadow-fuchsia-500/40"
           placeholder="Ask the mystical code spirits about your coding journey, career path, or technical challenges..."
           value={question}
           onChange={handleChange}
