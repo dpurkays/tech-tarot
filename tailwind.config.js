@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        audiowide: ["Audiowide", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

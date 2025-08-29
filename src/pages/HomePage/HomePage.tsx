@@ -4,7 +4,7 @@ function HomePage() {
   const [userQuestion, setUserQuestion] = useState("");
 
   return (
-    <main className="home">
+    <main className="min-h-screen flex flex-col items-center pt-12 bg-gradient-to-b from-purple-900 to-black">
       <TarotInputForm setUserQuestion={setUserQuestion} />
       {userQuestion && (
         <section className="reading-question">

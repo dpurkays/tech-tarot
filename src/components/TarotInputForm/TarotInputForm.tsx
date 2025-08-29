@@ -19,14 +19,20 @@ function TarotInputForm({ setUserQuestion }: TarotInputProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="input">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-4 lg:gap-8 px-8 py-16 bg-slate-600 rounded-2xl border-purple-500"
+    >
       <textarea
-        className="input__field"
+        className="h-32 w-60 lg:w-80 p-2 rounded-2xl"
         placeholder="Ask the mystical code spirits about your coding journey, career path, or technical challenges..."
         value={question}
         onChange={handleChange}
       />
-      <button type="submit" className="input__button">
+      <button
+        type="submit"
+        className="p-3 rounded-2xl bg-gradient-to-r from-purple-400 to-pink-400 text-white font-bold"
+      >
         Consult The Cards
       </button>
     </form>
