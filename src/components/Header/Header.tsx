@@ -4,7 +4,7 @@ function Header() {
       <h1 className="text-3xl lg:text-5xl font-audiowide bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
         Tech Tarot
       </h1>
-      <p className="text-yellow-300">Divination for Developers</p>
+      <p className="text-amber-400">Divination for Developers</p>
     </header>
   );
 }
